@@ -1,0 +1,72 @@
+ul{
+	margin: 0;
+	padding: 0;
+}
+.summ_resume, .games{
+	display: none;
+}
+
+ul.list{
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+}
+
+ul.list li.game{
+	list-style: none;
+	border: 1px solid #e1e1e1;
+	-webkit-flex: 10em;
+	flex: 10em;
+	padding: 1.4em 0em 5em 0em;
+}
+
+ul.list li.win{
+	background: #27a3c5;
+}
+
+ul.list li.loose{
+	background: #af0100;
+}
+
+li.game {
+	position: relative;
+}
+
+.game img {
+	display: block;
+	margin: 0 auto;
+}
+
+.game div.ranked{
+	border-bottom: 35px solid rgba(0,0,0,0);
+	border-right: 35px solid #cfa300;
+	height: 0;
+	width: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.game div.kda {
+	font-family: 'Source Sans Pro:200', sans-serif;
+	position: absolute;
+	bottom: 0;
+	background: #001d70;
+	width: 100%;
+	color: #feffef;
+	left: 0;
+	text-align: center;
+	padding: .5em 0;
+}
+
+.game span.champion_name{
+	text-align: center;
+	display: block;
+	font-family: 'Archivo Black', sans-serif;
+}
+
+
+
+
